@@ -11,7 +11,7 @@ function WelcomeMessage() {
     if (hours < 12) {
       newMessage = "Goedemorgen";
     } else if (hours < 18) {
-      newMessage = "Goedemiddag";
+      newMessage = "Goedemiddag BESTE DOCENT JASON!!!";
     } else {
       newMessage = "Goedenavond";
     }
@@ -20,10 +20,10 @@ function WelcomeMessage() {
   }, []);
 
   return (
-    <div className="bg-gray-100 text-black p-6 rounded-2xl mb-4">
+    <section className="bg-gray-100 text-black p-6 rounded-2xl mb-4">
       <h2 className="text-xl font-bold">{message}</h2>
-      <p className="mt-3">Welkom op deze pagina!</p>
-    </div>
+      <p className="mt-3">Welkom op deze pagina! in a section</p>
+    </section>
   );
 }
 

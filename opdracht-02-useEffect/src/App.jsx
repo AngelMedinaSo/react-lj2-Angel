@@ -11,7 +11,7 @@ function App() {
       <WelcomeMessage />
       <Clock />
       <PageTimer />
-      <DayQuote />
+      <DayQuote />98
     </>
   );
 }

@@ -18,7 +18,8 @@ function DashboardPage() {
         setIsLoading(false);
       }
     };
-    setTimeout(fetchData, 1000);
+    const timeoutId = setTimeout(fetchData, 1000);
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (

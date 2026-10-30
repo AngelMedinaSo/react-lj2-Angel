@@ -39,28 +39,28 @@ Loop deze lijst volledig door. Pas als elk punt klopt, ben je klaar.
 
 **Algemeen**
 - [ ] De app start zonder errors in de terminal
-- [ ] De app laadt in de browser en blijft werken (geen witte pagina, geen crash)
-- [ ] Er staan **geen errors** in de browser-console
-- [ ] Er staan **geen warnings** in de browser-console (ook niet over keys, props of hooks)
+- [x] De app laadt in de browser en blijft werken (geen witte pagina, geen crash)
+- [x] Er staan **geen errors** in de browser-console
+- [x] Er staan **geen warnings** in de browser-console (ook niet over keys, props of hooks)
 
 **Cursusoverzicht**
-- [ ] Alle cursussen worden getoond bij het openen van de dashboard-pagina
-- [ ] Elke cursuskaart toont de juiste titel, beschrijving, instructor en rating
-- [ ] Als je op de tab **Beginner** klikt, zie je alleen beginner-cursussen
-- [ ] Als je op de tab **Gevorderd** klikt, zie je alleen gevorderde cursussen
-- [ ] Als je op de tab **Alles** klikt, zie je weer de volledige lijst
+- [x] Alle cursussen worden getoond bij het openen van de dashboard-pagina
+- [x] Elke cursuskaart toont de juiste titel, beschrijving, instructor en rating
+- [x] Als je op de tab **Beginner** klikt, zie je alleen beginner-cursussen
+- [x] Als je op de tab **Gevorderd** klikt, zie je alleen gevorderde cursussen
+- [x] Als je op de tab **Alles** klikt, zie je weer de volledige lijst
 
 **Populaire cursussen**
-- [ ] De sectie *Populaire cursussen* toont de cursussen met de **meeste** views bovenaan (niet de minste)
-- [ ] De volgorde klopt: de cursus met het hoogste aantal views staat op plek 1
+- [x] De sectie *Populaire cursussen* toont de cursussen met de **meeste** views bovenaan (niet de minste)
+- [x] De volgorde klopt: de cursus met het hoogste aantal views staat op plek 1
 
 **Statistieken**
-- [ ] De *Gemiddelde rating* toont een getal (bijv. `4.2`), geen `NaN`, `undefined` of lege tekst
-- [ ] De statistieken crashen niet wanneer de cursuslijst leeg zou zijn
+- [x] De *Gemiddelde rating* toont een getal (bijv. `4.2`), geen `NaN`, `undefined` of lege tekst
+- [x] De statistieken crashen niet wanneer de cursuslijst leeg zou zijn
 
 **Cursuskaart — interactie**
-- [ ] Wanneer je op de knop **Bekijk video** klikt, opent de bijbehorende video (nieuwe tab of navigatie)
-- [ ] De knop doet écht iets zichtbaars — niet alleen een `console.log`
+- [x] Wanneer je op de knop **Bekijk video** klikt, opent de bijbehorende video (nieuwe tab of navigatie)
+- [x] De knop doet écht iets zichtbaars — niet alleen een `console.log`
 
 ---
 
@@ -82,3 +82,7 @@ Zijn alle vinkjes groen? Dan kun je door naar de uitbreidingsopdracht: nieuwe us
 - [React Cheat Sheet (overzicht)](https://meesterjson.nl/cheat-sheet/pages/react/index.html)
 
 **Oplevering:** Alle bugs opgelost (geen fouten of warnings in de console) + de acceptatiecriteria-lijst volledig afgevinkt. Commit & Push + link inleveren via Canvas.
+
+## Controle van deze versie
+
+De interacties zijn getest met een lokale browserpreview en geautomatiseerde DOM-tests: filters, cursusgegevens, populariteit, statistieken, lege lijsten en videonavigatie. De preview had geen console-errors of warnings. De standaard Vite-build kon in de afgeschermde omgeving niet starten door spawn EPERM; controleer daarom lokaal nog npm install en npm run dev voordat je het eerste vakje afvinkt. De keuze-uitbreidingen uit new-features.md zijn niet toegevoegd.

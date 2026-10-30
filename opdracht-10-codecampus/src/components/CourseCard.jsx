@@ -75,7 +75,7 @@ const CourseCard = ({ course }) => {
 
   const openCourseVideo = (url) => {
     return () => {
-      console.log('Video URL:', url);
+      window.location.href = url;
     };
   };
 
@@ -90,6 +90,7 @@ const CourseCard = ({ course }) => {
       </figure>
       <div className='course-content'>
         <h3>{course.title}</h3>
+        <p>{course.description}</p>
         <div className='course-instructor'>
           <span className='instructor-avatar' aria-hidden='true'>
             {course.instructor
